@@ -10,3 +10,16 @@ Untuk mengubah port menjadi 8080, kita perlu memodifikasi bagian di mana _server
 
 ![Modifying the websocket port](https://i.imgur.com/nt8psIP.png)
 
+## 2.3. _Small changes, add IP and Port_
+
+Pada `server.rs`, saya menambahkan informasi alamat pengirim ke setiap pesan yang dikirim ke _client_.
+
+![](https://i.imgur.com/4LOHOqX.png)
+
+Sementara itu, pada `client.rs`, saya menambahkan teks "Fahmi's computer -". Selain itu, karena perubahan dari _server_, _client_ juga akan menampilkan alamat IP dan port asli pengirim saat mencetak pesan dari _server_
+
+![](https://i.imgur.com/ppC2xzv.png)
+
+Berikut adalah hasilnya setelah dijalankan.
+
+![](https://i.imgur.com/uoh7sSl.png)
